@@ -8,7 +8,7 @@ const port = 3000;
 app.use(express.static("public"));
 
 // Rotta principale (Homepage)
-app.get('/', (req, res) => {
+app.get("/", (req, res) => {
     res.send("Homepage");
 });
 
