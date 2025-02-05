@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+
 // Definiamo la cartella per i file statici
 app.use(express.static("public"));
 
