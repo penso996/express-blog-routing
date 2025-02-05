@@ -1,18 +1,19 @@
 // Importiamo express e utlizziamo la parte di routing
 const express = require("express");
 const router = express.Router();
-
+// Importo i dati
+const posts = require("../data/posts");
 
 // Rotte di CRUD dei post
 
 // Index
 router.get("/", function (req, res) {
-    res.send("Lista dei post");
+    res.json(posts);
 });
 
 // Show
 router.get("/:id", function (req, res) {
-    res.send("Dettagli del post " + req.params.id);
+    res.json(posts[req.params.id]);
 });
 
 // Create
