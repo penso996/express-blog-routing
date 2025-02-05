@@ -15,7 +15,7 @@ router.get("/:id", function (req, res) {
     res.send("Dettagli del post " + req.params.id);
 });
 
-// Store
+// Create
 router.post("/", function (req, res) {
     res.send("Creazione di un post");
 });
@@ -30,7 +30,7 @@ router.patch("/:id", function (req, res) {
     res.send("Modifica parziale del post " + req.params.id);
 });
 
-// Destroy
+// Delete
 router.delete('/:id', function (req, res) {
     res.send("Eliminazione del post " + req.params.id);
 });
