@@ -2,7 +2,7 @@
 const express = require("express");
 const router = express.Router();
 // Importo i dati
-const posts = require("../data/posts");
+const posts = require("../data/data_posts");
 
 // Rotte di CRUD dei post
 
