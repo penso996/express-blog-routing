@@ -2,18 +2,18 @@
 const express = require("express");
 const router = express.Router();
 // Importo i dati
-const posts = require("../data/data_posts");
+const dataPosts = require("../data/data_posts");
 
 // Rotte di CRUD dei post
 
 // Index
 router.get("/", function (req, res) {
-    res.json(posts);
+    res.json(dataPosts);
 });
 
 // Show
 router.get("/:id", function (req, res) {
-    res.json(posts[req.params.id]);
+    res.json(dataPosts[req.params.id]);
 });
 
 // Create
