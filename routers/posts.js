@@ -12,8 +12,9 @@ router.get("/", function (req, res) {
 });
 
 // Show
+    //CORREGGERE
 router.get("/:id", function (req, res) {
-    res.json(dataPosts[req.params.id]);
+    res.json(dataPosts[req.params.id - 1]);
 });
 
 // Create
