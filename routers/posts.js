@@ -12,7 +12,7 @@ router.get("/", function (req, res) {
 });
 
 // Show
-    //CORREGGERE
+//NON IL MODO CORRETTO
 router.get("/:id", function (req, res) {
     res.json(dataPosts[req.params.id - 1]);
 });
